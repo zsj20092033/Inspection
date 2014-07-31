@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/xjupload_title"
+        layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF"
+                android:paddingBottom="5.0dp"
+                android:paddingTop="5.0dp" >
+
+                <Button
+                    android:id="@+id/xjupload_camera_btn"
+                    android:layout_width="54.0dp"
+                    android:layout_height="54.0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dp"
+                    android:background="@drawable/xjupload_photo_btn_selector" />
+
+                <TextView
+                    android:id="@+id/xjupload_photo_txt"
+                    android:textAppearance="@style/XjUploadPhotoPathText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toLeftOf="@id/xjupload_camera_btn"
+                    android:layout_marginRight="5.0dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/xjupload_photo_text_hint" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffc7c7c7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10.0dp" >
+
+                <EditText
+                    android:id="@+id/xjupload_wzsm_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/xjupload_wzsm_text_hint"
+                    android:inputType="textMultiLine"
+                    android:minHeight="@dimen/wzsmMinHeight"
+                    android:background="#FFFFFFFF" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffc7c7c7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5.0dp" >
+
+                <RadioGroup
+                    android:id="@+id/xjupload_importance_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/xjupload_normal_rb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/xjupload_normal_button_text"
+                        android:textColor="@color/normal_black" />
+
+                    <RadioButton
+                        android:id="@+id/xjupload_urgency_rb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/xjupload_urgency_button_text"
+                        android:textColor="@color/normal_black" />
+
+                    <RadioButton
+                        android:id="@+id/xjupload_very_urgenc_rb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/xjupload_very_urgency_button_text"
+                        android:textColor="@color/normal_black" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dp" >
+
+                <Button
+                    android:id="@+id/xjupload_upload_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xjupload_upload_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/xjupload_upload_btn"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

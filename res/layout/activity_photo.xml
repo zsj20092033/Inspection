@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/photo_image" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    
+    <Button 
+        android:id="@+id/photo_finish"
+        android:layout_width="60.0dp"
+        android:layout_height="50.0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginBottom="10.0dp"
+        android:text="完成"
+        android:textSize="18sp"
+        android:background="@drawable/xjupload_upload_btn_selector"/>
+    
+    <Button 
+        android:id="@+id/photo_camera"
+        android:layout_width="60.0dp"
+        android:layout_height="50.0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginBottom="10.0dp"
+        android:text="重拍"
+        android:textSize="18sp"
+        android:background="@drawable/xjupload_upload_btn_selector"/>
+</RelativeLayout>
